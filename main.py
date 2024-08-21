@@ -20,7 +20,7 @@ dt = DecisionTreeClassifier()
 dt.fit(x_train, y_train)
 
 st.sidebar.title('Classifiers')
-classifier = st.sidebar.selectbox('Select Classifier', ('KNN', 'SVM'))
+classifier = st.sidebar.selectbox('Select Classifier', ('KNN', 'SVM','Decision Tree' ))
 if classifier == 'KNN' :
   knn = KNeighborsClassifier(n_neighbors=10)
   knn.fit(x_train, y_train)
