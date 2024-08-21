@@ -55,4 +55,4 @@ if classifier == 'Neural network' :
 
 
 
-st.plotly_chart(df['species'].value_counts())
+st.pie_chart(df['species'].value_counts())
