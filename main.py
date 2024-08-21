@@ -26,12 +26,12 @@ if classifier == 'KNN' :
   knn.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   accuracy_score(y_test, y_pred)
-if classifier == 'SVM'
+if classifier == 'SVM' :
   svm = SVC()
   svm.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   accuracy_score(y_test, y_pred)
-if classifier == 'Decision Tree'
+if classifier == 'Decision Tree' :
   dt = DecisionTreeClassifier()
   dt.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
