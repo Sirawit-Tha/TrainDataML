@@ -53,3 +53,7 @@ if classifier == 'Neural network' :
   acc = accuracy_score(y_test, y_pred)
   st.write(acc)
 
+
+
+st.bar_chart(iris['species'].value_counts())
+
