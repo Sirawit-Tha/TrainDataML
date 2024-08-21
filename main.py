@@ -9,6 +9,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
+st.header('MACHINE LEARNING')
+
 df = sns.load_dataset('iris')
 df
 x = df.iloc[:, :-1]
