@@ -2,3 +2,4 @@ streamlit
 seaborn
 scikit-learn
 numpy
+matplotlib.pyplot
