@@ -21,7 +21,7 @@ classifier = st.sidebar.selectbox('Select Classifier', ('KNN', 'SVM','Decision T
 if classifier == 'KNN' :
   knn = KNeighborsClassifier(n_neighbors=10)
   knn.fit(x_train, y_train)
-  y_pred = svm.predict(x_test)
+  y_pred = knn.predict(x_test)
   accuracy_score(y_test, y_pred)
   st.write(acc)
 if classifier == 'SVM' :
@@ -33,7 +33,7 @@ if classifier == 'SVM' :
 if classifier == 'Decision Tree' :
   dt = DecisionTreeClassifier()
   dt.fit(x_train, y_train)
-  y_pred = svm.predict(x_test)
+  y_pred = dt.predict(x_test)
   accuracy_score(y_test, y_pred)
   st.write(acc)
 
