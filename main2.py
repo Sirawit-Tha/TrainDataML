@@ -16,8 +16,8 @@ if classifier == 'KNN' :
   knn = KNeighborsRegressor(n_neighbors=5)
   knn.fit(x.reshape(-1, 1), y)
   y_pred = knn.predict(x.reshape(-1, 1))
-  st.pyplot(x, y)
-  st.pyplot(x, y_pred, color='red')
-  st.pyplot(x, y)
-  st.pyplot(x, y_pred)
-  
+  fig, ax = plt.subplots()
+  ax.scatter(x, y)
+  ax.scatter(x, y_pred)
+  ax.scatter(fig)
+
