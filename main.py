@@ -9,8 +9,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
-st.header('MACHINE LEARNING')
-st.write('😊 by Mr.Sirawit Thajakan')
+st.header('😊 MACHINE LEARNING 😊')
+st.write('By Mr.Sirawit Thajakan')
 
 df = sns.load_dataset('iris')
 df
