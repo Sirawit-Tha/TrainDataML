@@ -54,5 +54,5 @@ if classifier == 'Neural network' :
   st.write(acc)
 
 
-
+st.write(df['species'].value_counts().plot(kind='pie'))
 st.bar_chart(df['species'].value_counts())
