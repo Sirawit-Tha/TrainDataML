@@ -4,9 +4,6 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 
-st.header('😊 MACHINE LEARNING 😊')
-st.write('By Mr.Sirawit Thajakan')
-
 x = np.random.rand(100)
 y = 2 * x + 1 + 0.2 * np.random.rand(100)
 
