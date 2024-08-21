@@ -8,6 +8,18 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsRegressor
+
+
+
+
+
+
+
+
+
+
+
 
 st.header('😊 MACHINE LEARNING 😊')
 st.write('By Mr.Sirawit Thajakan')
@@ -55,3 +67,18 @@ if classifier == 'Neural network' :
 
 
 st.bar_chart(df['species'].value_counts())
+
+a = np.random.rand(100)
+b = 2 * x + 1 + 0.2 * np.random.rand(100)
+plt.scatter(a, b)
+
+a_train, a_test, b_train, b_test = train_test_split(a, b, test_size=0.2)
+
+knn = KNeighborsRegressor(n_neighbors=5)
+knn.fit(a.reshape(-1, 1), b)
+b_pred = knn.predict(a.reshape(-1, 1))
+plt.scatter(a, b)
+plt.plot(a, b_pred, color='red')
+plt.scatter(a, b)
+plt.scatter(a, b_pred)
+
