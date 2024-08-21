@@ -16,15 +16,12 @@ y = iris['species']
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-
 dt = DecisionTreeClassifier()
 dt.fit(x_train, y_train)
 
-
-
 st.sidebar.title('Classifiers')
 classifier = st.sidebar.selectbox('Select Classifier', ('KNN', 'SVM'))
-if classifier == 'KNN'
+if classifier == 'KNN' :
   knn = KNeighborsClassifier(n_neighbors=10)
   knn.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
