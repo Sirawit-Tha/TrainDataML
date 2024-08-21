@@ -55,4 +55,4 @@ if classifier == 'Neural network' :
 
 
 
-st.pie_chart(df['species'].value_counts())
+st.bar_chart(df['species'].value_counts())
