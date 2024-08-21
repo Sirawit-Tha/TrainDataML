@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
 st.header('MACHINE LEARNING')
-st.write('😊 by Mr.Sirawwit Thajakan')
+st.write('😊 by Mr.Sirawit Thajakan')
 
 df = sns.load_dataset('iris')
 df
