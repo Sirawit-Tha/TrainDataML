@@ -55,5 +55,5 @@ if classifier == 'Neural network' :
 
 
 
-st.bar_chart(iris['species'].value_counts())
+st.bar_chart(df['species'].value_counts())
 
