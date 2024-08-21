@@ -16,9 +16,6 @@ y = df['species']
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-dt = DecisionTreeClassifier()
-dt.fit(x_train, y_train)
-
 st.sidebar.title('Classifiers')
 classifier = st.sidebar.selectbox('Select Classifier', ('KNN', 'SVM','Decision Tree' ))
 if classifier == 'KNN' :
@@ -26,14 +23,17 @@ if classifier == 'KNN' :
   knn.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   accuracy_score(y_test, y_pred)
+  st.write(acc)
 if classifier == 'SVM' :
   svm = SVC()
   svm.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   accuracy_score(y_test, y_pred)
+  st.write(acc)
 if classifier == 'Decision Tree' :
   dt = DecisionTreeClassifier()
   dt.fit(x_train, y_train)
   y_pred = svm.predict(x_test)
   accuracy_score(y_test, y_pred)
+  st.write(acc)
 
